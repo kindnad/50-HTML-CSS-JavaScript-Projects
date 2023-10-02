@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: aquamarine;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+.container{
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  width:800px;
+  text-align: center;
+  padding:20px 30px;
+  max-width: 100%;
+  width: 800px;
+  
+}
+.btn{
+  padding: 10px 30px;
+  margin:10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: aliceblue;
+  border: none;
+  background-color: aquamarine;
+
+}
+h4{
+  margin:0;
+  opacity:0.5;
+  letter-spacing: 5px;
+}
+.joke{
+  font-size:30px;
+  letter-spacing: 5px;
+  line-height:40px;
+  margin: 40px auto;
+  max-width: 600px;
+}

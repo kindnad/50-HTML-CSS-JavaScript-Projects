@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: aquamarine;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.btn{
+  padding: 10px 30px;
+  margin:10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: aliceblue;
+  border: none;
+  background-color: aquamarine;
+
+}
+

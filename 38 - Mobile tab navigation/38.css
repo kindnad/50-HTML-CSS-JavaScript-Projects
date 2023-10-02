@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  
+  background: linear-gradient(to right, #d4d3dd,#efefbb);
+  background-color: #3b3b98;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+
+}
+.phone{
+  background-color: aliceblue;
+  overflow: hidden;
+position: relative;
+  width: 450px;
+  height: 600px;
+  border-radius: 15px;
+  border: 2px solid aliceblue;
+}
+.phone .content{
+ object-fit: cover;
+  width: 100%;
+  height: calc(100% - 60px);
+  
+  transition: opacity 0.4s ease;
+}
+.content{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+
+}
+.content{
+   opacity: 0;
+}
+.content.show{
+  opacity: 1; 
+} 
+.phone nav{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top:-5px;
+}
+nav ul{
+  display: flex;
+  
+  list-style-type: none;
+  
+ margin: 0;
+ padding: 0;
+ height: 60px;
+  
+}
+nav li{
+  flex: 1;
+}
+nav ul li{
+  text-align: center;
+  cursor: pointer;
+  color: #777;
+  padding: 10px;
+ 
+}
+
+nav ul li p{
+margin: 2px 0;
+font-size: 16px;
+}
+nav ul li:hover,
+nav ul li.active{
+  color: #8e44ad;
+}
+
+ 

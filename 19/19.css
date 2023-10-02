@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); 
+
+:root{
+--primary-color: #eee;
+--secondary-color: black;
+ 
+}
+
+html.dark{
+  --primary-color: black;
+  --secondary-color: #eee;
+ 
+
+}
+
+html.dark{
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.5s ease;
+}
+
+body{
+  /* background-image: url('https://th.bing.com/th/id/R.7f34a70a5bee79488309934920d316cb?rik=IRJI6pSFo6OI%2fQ&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2018%2f03%2fNatural-Images-HD-1080p-Download-with-Keyhole-Arch-at-Pfeiffer-Beach.jpg&ehk=JPI0MFI04N62Xtd7MT1P2sw4vJgwODLsp1EcpgvuGFo%3d&risl=&pid=ImgRaw&r=0');  */
+  
+  margin:0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightcyan;
+}
+.btn{
+  padding: 20px 30px;
+  font-size: 2rem;
+  background-color: lightsalmon;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  
+}
+.btn .whitespark{
+border-radius: 50%;
+width: 6.25rem;
+height: 6.25rem;
+background-color: white;
+position: absolute;
+transform: translate(-50%, -50%) scale(0);
+animation: mymove 0.5s ease-out;
+
+}
+
+@keyframes mymove {
+  to {
+    opacity: 0;
+  transform: translate(-50%, -50%) scale(3);
+  }
+}

@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  
+  background-color: aquamarine;
+  margin: 0;
+  background-color: lightblue;
+}
+h1{
+  margin: 90px 0 80px;
+  text-align: center;
+}
+.faq{
+  background-color: wheat;
+  padding: 30px;
+  background-color: transparent;
+  border: 1px solid #9fa4a9;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.faq-container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.faq.active{
+background-color: azure;
+}
+.faq.active::before,.faq.active::after
+{
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: green;
+  position: absolute;
+  font-size: 6rem;
+  left:20px;
+top:20px;
+z-index: 0;
+opacity: 0.3;
+}.faq.active::before
+{
+top:-15px;
+left:-30px;
+color: purple;
+transform: rotateY(180deg);
+}
+
+.faq-title{
+  margin:0 35px 0 0;
+}
+.faq-text{
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active .faq-text{
+  display: block; 
+}
+.faq-toggle:focus{
+  outline: 0;
+}
+.faq-toggle{
+
+position: absolute;
+
+background-color: transparent;
+border: 0;
+cursor: pointer;
+top:30px;
+right:30px;
+font-size: 1rem;
+height: 2rem;
+width: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size:1rem;
+
+}
+
+.faq .faq-toggle .fa-x{
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-x{
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-plus{
+  display:none;  
+  }
+
+.fa-x{
+
+}
+.faq.active .fa-x{
+  
+}

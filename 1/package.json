@@ -1,0 +1,16 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.3"
+  },
+  "description": ""
+}

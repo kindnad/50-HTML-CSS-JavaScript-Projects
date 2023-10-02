@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  background-color: #efefbb;
+  background: linear-gradient(to right, #d4d3dd,#efefbb);
+  background-color: #3b3b98;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+}
+h2{
+  letter-spacing: 2px;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+/* align-items: space-between; */
+justify-content: center;
+/* margin: 0 auto;  */
+max-width: 1200px;
+
+}
+.pokemon{
+  background-color: #eee;
+  /* background-color:rgb(169, 202, 169); */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0 3px 15px rgba(100,100,100,0.5);
+  padding: 20px;
+  
+  
+
+}
+.info-container{
+  text-align: center;
+  margin-top:20px;
+}
+.pokemon .img-container{
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  width:120px;
+  height: 120px;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.img-container img{
+margin-top: 20px;
+}
+.pokeid{
+  border-radius: 3px;
+  background-color: rgba(104, 112, 112, 0.5);
+  padding: 5px 10px;
+  font-size: 0.8em;
+}

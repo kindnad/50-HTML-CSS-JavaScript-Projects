@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); 
+
+*{
+  box-sizing: border-box;
+}
+body{
+  /* background-image: url('https://th.bing.com/th/id/R.7f34a70a5bee79488309934920d316cb?rik=IRJI6pSFo6OI%2fQ&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2018%2f03%2fNatural-Images-HD-1080p-Download-with-Keyhole-Arch-at-Pfeiffer-Beach.jpg&ehk=JPI0MFI04N62Xtd7MT1P2sw4vJgwODLsp1EcpgvuGFo%3d&risl=&pid=ImgRaw&r=0');  */
+  
+  margin:0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: aqua;
+}
+
+.triangle{
+  
+  position: relative;
+  border: 2px solid red;
+
+}
+ .triangle::before,.triangle::after{
+  position: absolute;
+  top:0;
+  left: 0;
+ 
+  
+  content: '';
+  border-style: solid;
+  
+  border-color: transparent;
+  border-bottom-color: white;
+  border-width: 10px;
+  
+  animation: spin1 2s linear 0.5s infinite; 
+  
+  
+} 
+.triangle::after{
+  animation: spin2 2s linear infinite; 
+  border-bottom-color: red;
+  transform: rotate(90deg);
+  
+} 
+
+@keyframes spin1 {
+  0%,25%{
+    transform: rotate(0deg);
+  }
+  50%, 75%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  0%,25%{
+    transform: rotate(90deg);
+  }
+  50%, 75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(450deg);
+  }
+}

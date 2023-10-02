@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+
+}
+.background{
+  position: absolute;
+  top:-50px;
+  left: -50px;
+  bottom:-50px;
+  right:-50px;
+  background: url('https://images.unsplash.com/photo-1630568667468-fe2a669d8861?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+z-index: -1;
+filter: blur(20px);
+}
+ 

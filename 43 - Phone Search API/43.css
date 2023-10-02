@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+}
+.container{
+  width: 300px;
+  height: 550px;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.header{
+  width: 300px;
+
+  background-color: #3e57bd;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+  padding: 30px 20px;
+}
+.header h4{
+  margin: 0;
+}
+.subtitle{
+  display:inline-block; 
+  margin: 5px 0 20px;
+  opacity: 0.8;
+}
+.header input{
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+ 
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0,0.3);
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+}
+.header input:focus{
+  outline: none;
+}
+.user-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 400px;
+  background-color: #fff;
+  overflow-y: auto;
+   
+  
+}
+.user-list li{
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+  
+
+ 
+  
+}
+#result li img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+#result li .user-info{
+  margin-left:10px;
+}
+
+.user-info h4{
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.user-list li:not(:last-of-type){
+  border-bottom: 1px solid #eee;
+}
+.user-list li.hide{
+  display: none;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); 
+
+
+body{
+  /* background-image: url('https://th.bing.com/th/id/R.7f34a70a5bee79488309934920d316cb?rik=IRJI6pSFo6OI%2fQ&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2018%2f03%2fNatural-Images-HD-1080p-Download-with-Keyhole-Arch-at-Pfeiffer-Beach.jpg&ehk=JPI0MFI04N62Xtd7MT1P2sw4vJgwODLsp1EcpgvuGFo%3d&risl=&pid=ImgRaw&r=0');  */
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.4s ease;
+
+}
+
+body::before{
+  content: '';
+ position: absolute;
+top:0;
+left: 0;
+  background-color: black;
+  opacity: 0.3;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+
+}
+
+.slide-container{
+  width: 70vw;
+  height: 70vh;
+  box-shadow: 0 0 3px grey;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.slides{
+  width: 100vw;
+  height: 100vh;
+position: absolute;
+top:-15vh;
+left:-15vw;
+background-repeat: no-repeat;
+opacity: 0;
+background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.4s ease;
+
+
+}
+.slides.active{
+  opacity: 1;
+}
+.arrow{
+  position: fixed;
+  top:50%;
+  z-index: 20;
+  transform: translateY(-50%);
+  padding:1rem;
+  background: transparent;
+  font-size:2rem;
+  color:#eee;
+  border: 1px solid orange;
+}
+
+.arrow:focus{
+  outline: 0;
+}
+.arrow-left{
+left:calc(15vw - 65px);
+}
+.arrow-right{
+  right:calc(15vw - 65px);
+  }

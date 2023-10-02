@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  
+  margin: 0;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+background-color: yellow;
+width: 250px;
+padding: 20px;
+  
+}
+#textarea{
+  display: block;
+  height: 100px;
+}
+.tags{
+width: 500px;
+}
+.tag{
+  font-size:2rem;
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  border-radius: 70%;
+  padding:10px 20px;
+  
+}
+h5{}
+.tag.highlight{
+  background-color:purple;
+}

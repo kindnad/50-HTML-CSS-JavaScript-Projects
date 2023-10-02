@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  
+  margin: 0;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.nav{
+  background-color: white;
+  width: 80px;
+  padding:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.6s linear;
+}
+
+
+.nav.active{
+  width: 350px;
+}
+.nav.active ul{
+  opacity:1;
+}
+nav ul{
+display: flex;
+justify-content: center;
+  align-items: center;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:0;
+  transition: width 0.6s linear;
+}
+.nav.active ul{
+   width:100%;
+  
+}
+nav ul li{
+opacity:0;
+transform: rotateY(0deg);
+transition: transform 0.6s linear, opacity 0.6s linear;
+
+}
+
+nav.active ul li{
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+nav ul li a{
+  
+ margin-right:10px;
+ text-decoration: none;
+ color:black;
+ position:relative;
+}
+
+.icon{
+  background-color: white;
+  width: 30px;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  cursor: pointer;
+  height:30px;
+  padding:0;
+}
+.icon .line{
+background-color: blueviolet;
+height:2px;
+width:20px;
+position: absolute;
+top:10px;
+left:5px;
+transform: rotate(0) translateY(0);
+transition: transform 0.6s linear;
+
+}
+
+.icon .line2{
+  
+  top:auto;
+  bottom:10px;
+  
+}
+
+.nav.active .icon .line1{
+  transform: rotate(-765deg) translateY(5.5px);
+  
+}
+
+.nav.active .icon .line2{
+  transform: rotate(765deg) translateY(-5.5px);
+}
+
+
+

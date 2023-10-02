@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+body {
+  background-color: #D7DFEC;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.quiz-container{
+box-shadow: 0 0 10px rgb(0, 0, 0,0.2);
+width: 600px;
+background-color: #fff;
+border-radius: 10px;
+overflow: hidden;
+
+}
+.quiz-header{
+  padding: 20px;
+}
+.question-title{
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+.quiz-header ul{
+  list-style-type: none;
+  padding: 0;
+}
+.quiz-header ul li{
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+#submit{
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #8E44AD;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#submit:focus{
+  outline: none;
+  border: none;
+}
+#submit:hover{
+  background-color: #5a4862;
+}

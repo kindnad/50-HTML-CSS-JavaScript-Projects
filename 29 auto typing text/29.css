@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); 
+
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  /* background-image: url('https://th.bing.com/th/id/R.7f34a70a5bee79488309934920d316cb?rik=IRJI6pSFo6OI%2fQ&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2018%2f03%2fNatural-Images-HD-1080p-Download-with-Keyhole-Arch-at-Pfeiffer-Beach.jpg&ehk=JPI0MFI04N62Xtd7MT1P2sw4vJgwODLsp1EcpgvuGFo%3d&risl=&pid=ImgRaw&r=0');  */
+
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+div{
+  position: fixed;
+  bottom: 10px;
+  background: gray;
+  padding: 10px 20px;
+
+}
+div input{
+  font-size: 1rem;
+  padding:5px;
+  width: 100px;
+  border-color: none;
+  text-align: center;
+}

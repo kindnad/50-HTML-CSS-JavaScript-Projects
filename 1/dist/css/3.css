@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; }
+  .container .container div {
+    width: 200px;
+    height: 20px;
+    position: relative; }
+
+body {
+  overflow-x: hidden; }
+
+.container div i {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20%); }
+
+.container div input {
+  width: 10px;
+  position: absolute; }
+
+.container.show-bar input {
+  width: 200px;
+  transition: 0.4s; }
+
+.container.show-bar i {
+  transform: translateX(180px);
+  transition: transform 0.4s linear; }

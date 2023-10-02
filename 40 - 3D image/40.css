@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+
+}
+.magic{
+position: fixed;
+top:50px;
+padding: 10px 15px;
+border-radius: 2px;
+background-color: bisque;
+color: blue;
+font-family:'Poppins', sans-serif;
+font-size: 16px;
+cursor: pointer;
+box-shadow: 0 3px rgba(250, 202, 36, 0.5);
+letter-spacing: 2px;
+}
+.magic:focus{
+  outline: none;
+}
+.magic:active{
+  box-shadow: none;
+  transform: translateY(2px);
+}
+.boxes{
+  margin-top: 100px;
+width: 500px;
+height: 500px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+ transition: 4s ease; 
+}
+.boxes.big{
+  width: 600px;
+  height: 600px;
+  
+}
+
+.boxes.big .box{
+  transform: rotateZ(360deg);
+  
+}
+.boxes .box{
+  position: relative;
+  width: 125px;
+  height: 125px;
+  transition: 4s ease;  
+  background-image: url('https://media0.giphy.com/media/iojLAcf5ZETPq/giphy.gif?cid=ecf05e479moz9ue84kxu2pv8kdomzwu296gs0s3ask5mfy38&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+background-repeat: no-repeat;
+background-size: 500px 500px;
+
+}
+.boxes .box::after{
+content: '';
+position: absolute;
+
+right:-15px;
+top:8px;
+background-color: yellow;
+height: 100%;
+width: 15px;
+transform: skewY(45deg);
+
+}
+
+.boxes .box::before{
+  content: '';
+  position: absolute;
+  
+  left:8px;
+  bottom:-15px;
+  background-color: yellow;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+  
+  }

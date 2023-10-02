@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  
+  margin: 0;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+
+.item{
+  flex:1;
+  margin: 20px 30px;
+  text-align: center;
+  
+}
+.counter{
+  margin-top:50px;
+font-size: 60px;
+}
+
+@media (max-width: 580px){
+  .container{
+    flex-direction: column;
+  }
+  .counter{
+    margin-top: 0px;
+  }
+}
